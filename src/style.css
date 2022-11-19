@@ -1,0 +1,23 @@
+h1 {
+    color: #00ff00;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5em;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    color: #00ff00;
+    background-color: black;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 2em;
+    padding-left: 5em;
+}
+

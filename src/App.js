@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ThreeScene from "./components/ThreeScene";
+import Sphere from './components/Sphere';
+import { OrbitControls, Stars } from '@react-three/drei'
+import './style.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      height: '100vh', overflow: 'hidden' 
+    }}>
+      <div className='header'>
+        <h1>Bienvenidos a mi Página web</h1>
+        <ul className='lista'>
+          <li>Acerca de Nosotros</li>
+          <li>Blog</li>
+          <li>Servicios</li>
+          <li>Contáctanos</li>
+        </ul>
+      </div>
+      
+      <ThreeScene>
+        <color attach='background' args={['#161c24']} />
+        
+        <Sphere color='#00ff00' position={[-2, 0, 0]} />
+        <Sphere color='#ff0000' position={[2, 0, 0]}  />
+        <ambientLight />
+        <OrbitControls />
+        <Stars />
+      </ThreeScene>
     </div>
   );
 }
