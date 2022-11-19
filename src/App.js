@@ -10,7 +10,7 @@ function App() {
       height: '100vh', overflow: 'hidden' 
     }}>
       <div className='header'>
-        <h1>Bienvenidos a mi Página web</h1>
+        <h1>Sean Bienvenidos a mi Página web</h1>
         <ul className='lista'>
           <li>Acerca de Nosotros</li>
           <li>Blog</li>
